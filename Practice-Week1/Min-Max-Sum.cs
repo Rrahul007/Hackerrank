@@ -23,21 +23,19 @@ class Result
 
     public static void miniMaxSum(List<int> arr)
     {
-var sum = 0L;
-var min = long.MaxValue;
-var max = 0L;
-for(int i = 0; i<arr.Count; i++)
-{
- sum += arr[i];
- if(arr[i] < min)
-  min = arr[i];
-  
-  if(arr[i] > max)
-  max = arr[i];
-     
-}
-
-Console.WriteLine(string.Format("{0} {1}", sum - max, sum - min));
+        var sum = 0L;
+        var min = long.MaxValue;
+        var max = 0L;
+        for(int i = 0; i<arr.Count; i++)
+        {
+            sum += arr[i];
+            if(arr[i] < min)
+                min = arr[i];
+            if(arr[i] > max)
+                max = arr[i];
+            
+        }
+        Console.WriteLine(string.Format("{0} {1}", sum - max, sum - min));
     }
 }
 
